@@ -1,0 +1,12 @@
+package Modelo;
+
+import java.util.ArrayList;
+import java.util.Date;
+
+public class Factura {
+	private Date fecha;
+	private String nombreCliente;
+	private String numeroCliente;
+	private ArrayList<Productos> productos;
+	private ArrayList<Abono> abonos;
+}

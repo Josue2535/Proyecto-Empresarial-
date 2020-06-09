@@ -1,0 +1,9 @@
+package Modelo;
+
+public class Productos {
+	private double precio;
+	private int cantidad;
+	private String nombre;
+	private String color;
+	private String talla;
+}

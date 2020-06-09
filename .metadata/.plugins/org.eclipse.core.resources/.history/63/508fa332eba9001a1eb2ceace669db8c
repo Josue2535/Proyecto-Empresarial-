@@ -1,0 +1,41 @@
+package Modelo;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+public class Empresa {
+	private String nombreEmpresa;
+	private double utilidadBruta;
+	private ArrayList<Factura> facturas;
+	public Empresa(String nombreEmpresa, double utilidadBruta) {
+		this.nombreEmpresa = nombreEmpresa;
+		this.utilidadBruta = utilidadBruta;
+		this.facturas = new ArrayList<Factura>();
+	}
+	public String getNombreEmpresa() {
+		return nombreEmpresa;
+	}
+	public void setNombreEmpresa(String nombreEmpresa) {
+		this.nombreEmpresa = nombreEmpresa;
+	}
+	public double getUtilidadBruta() {
+		return utilidadBruta;
+	}
+	public void setUtilidadBruta(double utilidadBruta) {
+		this.utilidadBruta = utilidadBruta;
+	}
+	public ArrayList<Factura> getFacturas() {
+		return facturas;
+	}
+	public void setFacturas(ArrayList<Factura> facturas) {
+		this.facturas = facturas;
+	}
+	public void utilidadActual() {
+		double aux = 0;
+		for (int i = 0; i < facturas.size(); i++) {
+			aux+=facturas.get(i).getTotal()-facturas.get(i).getDebe();
+		}
+		setUtilidadBruta(aux);
+	}
+	
+}

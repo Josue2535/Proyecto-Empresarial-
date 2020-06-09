@@ -1,0 +1,17 @@
+package Modelo;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+public class Empresa {
+	private String nombreEmpresa;
+	private double utilidadBruta;
+	private ArrayList<Factura> facturas;
+	public Empresa(String nombreEmpresa, double utilidadBruta) {
+		this.nombreEmpresa = nombreEmpresa;
+		this.utilidadBruta = utilidadBruta;
+		this.facturas = new ArrayList<Factura>();
+	}
+	
+	
+}

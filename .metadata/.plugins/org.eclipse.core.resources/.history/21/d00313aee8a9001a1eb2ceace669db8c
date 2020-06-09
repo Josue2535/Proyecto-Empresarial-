@@ -1,0 +1,8 @@
+package Modelo;
+
+import java.util.Date;
+
+public class Abono {
+	private double cantidad;
+	private Date fecha;
+}
